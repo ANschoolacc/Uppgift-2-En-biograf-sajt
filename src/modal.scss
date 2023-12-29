@@ -1,0 +1,103 @@
+body {
+  font-style: roboto;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 30%;
+  background-color: #464646;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+
+  &__close-modal {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    font-size: 1em;
+    color: black;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+  
+  &__select-wrapper {
+    background-color: #464646;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  &__btns {
+    position: absolute;
+    font-size: 1em;
+    background-color: transparent;
+    justify-content: space-evenly;
+    bottom: 4em;
+  }
+  
+  &__p {
+    font-size: 1em;
+    color: black;
+  }
+  
+  &__p.time {
+    margin-top: 3em;
+  }
+  
+  &__btns__book {
+    background-color: #FFA500;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.5em;
+    padding: 0.5em 1.2em;
+  }
+  
+  &__btns__cancel {
+    background-color: #FFA500;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 0.5em;
+    padding: 0.5em 1.2em;
+    right: -11em;
+  }
+  
+  &__offLine {
+    margin-top: 1em;
+    color: #464646;
+  }
+}
+
+
+.overlay {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(200, 200, 200, 0.7);
+  backdrop-filter: blur(5px); 
+  z-index: 9;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+ }

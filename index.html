@@ -1,45 +1,73 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>BiHjoGrafen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/4c51990d8f.js"></script>
+  </head>
 
-<head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>BiHjoGrafen</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-  <script src='main.js' type="module"></script>
-</head>
+  <body>
+    <header class="Header">
+      <div class="Header__div">
+        <!-- Black div inside header -->
+      </div>
+      <nav class="Header__nav">
+        <ul class="Header__nav__ul">
+          <li class="Header__nav__ul__li">
+            <a href="pages/movies.html">Filmer</a>
+          </li>
+          <li class="Header__nav__ul__li"><a href="">Biljetter</a></li>
+          <li class="Header__nav__ul__li">
+            <a href="pages/aboutUs.html">Om oss</a>
+          </li>
+          <li class="Header__nav__ul__li"><a href="">Sök</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="modal hidden">
+        <button class="modal__close-modal">
+          <i class="fa-solid fa-skull-crossbones"></i>
+        </button>
+        <div class="modal__select-wrapper">
+          <p class="modal__p date">Date</p>
+          <select name="date" class="date-list">
+            <option value="2023-12-30">December 30, 2023</option>
+            <option value="2023-12-31">December 31, 2023</option>
+          </select>
+        </div>
 
-<body>
-  <header class="Header">
-    <div class="Header__div">
-      <!-- Black div inside header -->
-    </div>
-    <nav class="Header__nav">
-      <ul class="Header__nav__ul">
-        <li class="Header__nav__ul__li"><a href="pages/movies.html">Filmer</a></li>
-        <li class="Header__nav__ul__li"><a href="">Biljetter</a></li>
-        <li class="Header__nav__ul__li"><a href="pages/aboutUs.html">Om oss</a></li>
-        <li class="Header__nav__ul__li"><a href="">Sök</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-  </main>
-  <footer>
-  </footer>
-  <template class="movieTemplate">
-    <div class="movieTemplate__card">
-      <div class="movieTemplate__cover"></div>
-      <div class="movieTemplate__img"></div>
-      <h2 class="movieTemplate__title"></h2>
-      <p class="movieTemplate__ageLimit"></p>
-      <p class="movieTemplate__category"></p>
-      <p class="movieTemplate__description"></p>
-      <button class="movieTemplate__button" type="button"></button>
-    </div>
-  </template>
-</body>
+        <div class="modal__select-wrapper">
+          <p class="modal__p time">Time</p>
+          <select name="time" class="time-list">
+            <option value="09:00">9:00 AM</option>
+            <option value="12:00">12:00 PM</option>
+          </select>
+        </div>
 
-
+        <div class="modal__btns">
+          <button class="modal__btns__book">Book</button>
+          <button class="modal__btns__cancel">Cancel</button>
+          <p class="modal__offLine">Currently offline. Call 555-98764.</p>
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
+    </main>
+    <footer></footer>
+    <template class="movieTemplate">
+      <div class="movieTemplate__card">
+        <div class="movieTemplate__cover"></div>
+        <div class="movieTemplate__img"></div>
+        <h2 class="movieTemplate__title"></h2>
+        <p class="movieTemplate__ageLimit"></p>
+        <p class="movieTemplate__category"></p>
+        <p class="movieTemplate__description"></p>
+        <button class="movieTemplate__button" type="button"></button>
+      </div>
+    </template>
+  </body>
 </html>

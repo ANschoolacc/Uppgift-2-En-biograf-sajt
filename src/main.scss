@@ -2,6 +2,8 @@
 then everything will compile to main.css from here. 
 To do this you write @import "insert .scss file name here".*/
 
+@import "modal";
+
 @import "header";
 
 @import "footer";
