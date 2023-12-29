@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Filmer - BiHjoGrafen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <script src="../main.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Filmer - BiHjoGrafen</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
-  <script src='../main.js' type="module"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
-</head>
-
-<body>
-  <header class="Header">
-    <div class="Header__div">
-      <!-- Black div inside header -->
-    </div>
-    <nav class="Header__nav">
-      <ul class="Header__nav__ul">
-        <li class="Header__nav__ul__li"><a href="movies.html">Filmer</a></li>
-        <li class="Header__nav__ul__li"><a href="">Biljetter</a></li>
-        <li class="Header__nav__ul__li"><a href="aboutUs.html">Om oss</a></li>
-        <li class="Header__nav__ul__li"><a href="">Sök</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="moviesMain">
-    <section class="allMovies"></section>
-  </main>
-  <footer></footer>
-  <template class="movieTemplate">
-    <div class="movieTemplate__card">
-      <div class="movieTemplate__cover"></div>
-      <div class="movieTemplate__img"></div>
-      <h2 class="movieTemplate__title"></h2>
-      <p class="movieTemplate__ageLimit"></p>
-      <p class="movieTemplate__category"></p>
-      <p class="movieTemplate__description"></p>
-      <button class="movieTemplate__button" type="button">Boka biljett</button>
-    </div>
-  </template>
-</body>
-
+  <body>
+    <header class="Header">
+      <div class="Header__div">
+        <!-- Black div inside header -->
+      </div>
+      <nav class="Header__nav">
+        <ul class="Header__nav__ul">
+          <li class="Header__nav__ul__li"><a href="movies.html">Filmer</a></li>
+          <li class="Header__nav__ul__li"><a href="">Biljetter</a></li>
+          <li class="Header__nav__ul__li"><a href="aboutUs.html">Om oss</a></li>
+          <li class="Header__nav__ul__li"><a href="">Sök</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="moviesMain">
+      <section class="allMovies"></section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <a class="footer__a" href="#about">Om oss</a>
+        <a class="footer__a" href="#location">Plats</a>
+        <a class="footer__a" href="#facebook">Facebook</a>
+        <a class="footer__a" href="#twitter">Twitter</a>
+        <a class="footer__a" href="#instagram">Instagram</a>
+      </div>
+    </footer>
+    <template class="movieTemplate">
+      <div class="movieTemplate__card">
+        <div class="movieTemplate__cover"></div>
+        <div class="movieTemplate__img"></div>
+        <h2 class="movieTemplate__title"></h2>
+        <p class="movieTemplate__ageLimit"></p>
+        <p class="movieTemplate__category"></p>
+        <p class="movieTemplate__description"></p>
+        <button class="movieTemplate__button" type="button">
+          Boka biljett
+        </button>
+      </div>
+    </template>
+  </body>
 </html>

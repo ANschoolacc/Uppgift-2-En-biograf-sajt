@@ -1,6 +1,23 @@
 /*In this file there should only be imports from other .scss files,
 then everything will compile to main.css from here. 
 To do this you write @import "insert .scss file name here".*/
+.footer {
+  width: 100vw;
+  background-color: #464646;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.4em;
+}
+.footer__container {
+  display: flex;
+  gap: 8em;
+  padding: 1.5em 0 1.5em 0;
+}
+.footer__a {
+  text-decoration: none;
+  color: white;
+}
+
 * {
   font-size: 100%;
   font-family: "Roboto", sans-serif;
